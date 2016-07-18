@@ -1,0 +1,430 @@
+html, body {
+  overflow-x: hidden;
+  position: relative;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: " Microsoft Yahei";
+  color: #6F6F6F;
+}
+/****** 首页 ******/
+/* banner */
+.swiper-container {
+  width: 100%;
+  max-height: 500px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;/* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img{
+  width: 100%;
+}
+/* banner */
+.g-course{
+  width: 100%;
+  margin-top: 2.225%;/* 30px */
+  max-height: 438px;
+}
+.course-type{
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 33%;
+  margin-bottom: 5.67%;
+}
+.course-type-lt{
+  margin-right: .5%;
+}
+.course-type-md{
+  margin-right: .5%;
+}
+.course-type img{
+  width: 100%;
+  max-height: 438px;
+}
+.description{
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;/* 初值为0 */
+  padding: 10% 20% 0 13.45%;
+  color: white;
+  opacity: 0;
+  transition: .7s;
+  -webkit-transition: .7s; /* Safari */
+  overflow: hidden;
+}
+.course-type:hover .description{
+  height: 100%;
+  opacity: 1;
+}
+.course-type:hover .descrip-title, .course-type:hover .descrip-btn{
+  display: block;
+}
+.description1{
+  background-color: rgba(201,82,154,.8);
+}
+.description2{
+  background-color: rgba(224,181,89,.8);
+}
+.description3{
+  background-color: rgba(64,159,208,.8);
+}
+.descrip-title{
+  margin-top: 12%;
+  display: none;
+}
+.descrip-text{
+  font-size: 18px;
+  padding: 5% 0;
+  margin-top: 22%;
+  letter-spacing: 1px;
+}
+.descrip-btn, .viewDetai-btn{
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+}
+.descrip-btn{
+  margin-top: 18%;
+  border: none;
+  display: none;
+}
+/* 按钮的hover事件 */
+.descrip-btn:hover{
+  background-color: rgba(255,255,255,.9);
+}
+.descrip-btn1, .descrip-btn1:hover{
+  color: #C9529A;
+}
+.descrip-btn2, .descrip-btn2:hover{
+  color: #FFAE00;
+}
+.descrip-btn3, .descrip-btn3:hover{
+  color: #409FD0;
+}
+.g-content{
+  clear: both;
+  width: 100%;
+  min-height: 500px;
+  padding: 50px 60px;
+  background-image: url(../img/backgd.png);
+  background-repeat: repeat;
+}
+.content{
+  position: relative;
+  z-index: 2;
+}
+.backLine{
+  border-right: 1px solid #CCCCCC;
+  position: absolute;
+  z-index: 1;
+  width: 49%;
+  height: 135px;
+}
+.backLineAside{
+  width: 45%;
+  height: 70%;
+}
+.section{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 10.503%;
+  border: 1px solid #CCCCCC;
+  background-color: white;
+}
+.section-img-wrap{
+  width: 100%;
+}
+.section-img-wrap img{
+  width: 100%;
+  height: auto;
+}
+.section-text-wrap{
+  position: relative;
+  z-index: 2;
+  color: #6F6F6F;
+}
+.section-text-header{
+  padding: 1% 0;
+}
+.text-header-title, .text-header-iconGroup{
+  height: 40px; 
+  padding: 1% 0; 
+}
+.text-header-title{
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.text-header-iconGroup{
+  float: right;
+}
+.iconGroup{
+  display: inline-block;
+}
+.icon-wrap{
+  text-align: center;
+  display: inline-block;
+}
+.icon-text{
+  display: inline-block;
+  line-height: 20px;
+  color: #FFAE00;
+}
+.section-text-speci{
+  letter-spacing: 1px;
+  line-height: 2;
+  font-size: 16px;
+}
+.viewDetai-btn, a.viewDetai-btn:visited{
+  color: white;
+  border: none;
+  background-color: #FFAE00;
+}
+a.viewDetai-btn:hover {
+  color: white;
+  background-color: rgba(255,174,0,.7);
+}
+.icon-circle{
+  width: 80px;
+  margin: 0 auto;
+  transform: translate(0,50%);
+  -ms-transform: translate(0, 50%);/* IE 9 */
+  -webkit-transform: translate(0, 50%); /* Safari and Chrome */
+}
+/* 侧边栏各模块 */
+.search, .aside-course, .aside-knowlg, .aside-activi {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 30px 30px 0;
+  border: 1px solid #CCCCCC;
+  background-color: white;
+}
+.search{
+  padding-bottom: 20px;
+}
+/* 右侧边栏每一项的标题 */
+.aside-option-wrap{
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #CCCCCC;
+}
+.icon-search, .icon-course{
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 1px;
+  transform: translate(0,-50%);
+  -ms-transform: translate(0, -50%);/* IE 9 */
+  -webkit-transform: translate(0, -50%); /* Safari and Chrome */
+  text-align: center;
+  background-color: white;
+}
+.icon-course{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 9px;
+}
+.search-index{
+  height: 45px;
+  border-radius: 0;
+}
+#searchForm .form-group{
+  margin-bottom: 0;
+}
+.course-text p{
+  display: block;
+  color: #6F6F6F;
+}
+.course-text a{
+  text-decoration: none;
+}
+/* 覆盖bootstrap原来的list-group-item样式 */
+.aside-option-wrap .list-group-item {
+  padding: 10px 0 20px 0;
+  margin-bottom: 0; 
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.aside-option-wrap .list-group-item:last-child{
+  border: none;
+}
+.course-img-wrap{
+  display: table-cell;
+  vertical-align: top;
+  width: 35%;
+}
+.course-img-wrap img{
+  width: 100%;
+  height: auto;
+}
+.course-text{
+  display: table-cell;
+  padding: 5px 0 5px 15px;
+}
+.course-text-title{
+  font-size: 18px;
+}
+.course-text-title a{
+  color: inherit;
+  font-weight: 600;
+}
+.course-text-speci{
+  letter-spacing: 1px
+}
+.course-city{
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  color: #FFAE00;
+}
+/****** 首页 ******/
+/****** 活动页 ******/
+.filter-knowleg-wrap{
+  padding: 4.393%;/* 60px */
+  background-color: red;
+}
+.filter-knowleg{
+  border: 1px solid #CCCCCC;
+  background-color: white;
+}
+.filter-option{
+  padding: 2% 0 1%;
+}
+.filter-option-time{
+  padding-top: 2.361%;
+}
+.filter-time-child{
+  display: none;
+  padding: 5px; 
+  width: 455px;
+  background-color: red;
+}
+.filter-option ul{
+  padding-left: 0;
+  display: inline-block;
+}
+.filter-option ul li, .filter-time-child ul li{
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px 23px;
+  font-size: 16px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+}
+.filter-time-child ul{
+  margin: 0;
+}
+.filter-time-child .time-child-all{
+  margin-left: 0;
+}
+.filter-option ul li:hover, .filter-option-active{
+  background-color:  #FFAE00;
+  color: white;
+}
+.filter-time, .filter-addr{
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px 15px;
+  font-size: 16px;
+  width: 60px;
+  padding-left: 0;
+  font-weight: 700;
+  border-right: 1px solid #CCCCCC;
+  cursor: default;
+  background-color: white;
+}
+/****** 活动页 ******/
+/* 屏幕大于1200px时 */
+@media (min-width:1200px) {
+}
+
+/* 屏幕大于992px小于1200px时 */
+@media (min-width:992px) and (max-width:1200px) {
+  /****** 首页 ******/
+  .text-header-title{
+    font-size: 16px;
+  }
+  /****** 首页 ******/
+
+  /****** 活动页 ******/
+
+  /****** 活动页 ******/
+}
+
+/* 屏幕大于768px小于992px时 */
+@media (min-width:768px) and (max-width:992px) {
+  /****** 首页 ******/
+  .description{
+    padding: 10%;
+  }
+  .descrip-title{
+    font-size: 24px;
+  }
+  .descrip-text{
+    margin-top: 10%;
+  }
+  .backLineAside{
+    width: 48%;
+  }
+  .course-img-wrap{
+    width: 20%;
+  }
+  /****** 首页 ******/
+  /****** 活动页 ******/
+
+  /****** 活动页 ******/
+}
+
+/* 屏幕小于768px时 */
+@media (max-width:768px) {
+  /****** 首页 ******/
+  .descrip-title{
+    font-size: 20px;
+  }
+  .descrip-text{
+    font-size: 14px;
+  }
+  .iconGroup-wrap{
+    float: left!important;
+  }
+  .course-type{
+    width: 100%;
+    padding: 0;
+  }
+  .course-img-wrap{
+    width: 20%;
+  }
+  .search{
+    padding-bottom: 20px;
+  }
+  .g-content{
+    padding: 15px;
+  }
+  /****** 首页 ******/
+  /****** 活动页 ******/
+
+  /****** 活动页 ******/
+}
